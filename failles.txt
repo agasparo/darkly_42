@@ -1,9 +1,9 @@
-- [] xss script
 - [x] cookies
 - [x] valeur dans le tableau
-- [] src dans image
 - [x] redirection des links de partage
 - [x] email dans forgot password
+- [] xss script
+- [] src dans image
 - [] upload image
 - [] show membre
 - [] show img
