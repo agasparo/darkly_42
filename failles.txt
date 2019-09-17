@@ -8,5 +8,3 @@
 - [] show membre
 - [] show img
 - [] connection
-
-- [] renomer les dossiers avec le nom de la faille
