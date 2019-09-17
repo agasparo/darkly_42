@@ -1,5 +1,5 @@
 - [] xss script
-- [] cookies
+- [x] cookies
 - [] valeur dans le tableau
 - [] src dans image
 - [] redirection des links de partage
