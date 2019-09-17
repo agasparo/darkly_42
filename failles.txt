@@ -2,7 +2,7 @@
 - [x] cookies
 - [x] valeur dans le tableau
 - [] src dans image
-- [] redirection des links de partage
+- >[] redirection des links de partage
 - [] email dans forgot password
 - [] upload image
 - [] show membre

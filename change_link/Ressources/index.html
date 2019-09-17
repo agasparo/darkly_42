@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Link change</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Faille numero 3 : Link change</a>
+	</nav>
+	<div align="center">
+		<h1 class="mt-4">Changement de la valeur d'un lien</h1>
+
+		<h3 class="mt-5">Exploitation de la faille : </h3>
+
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 1 : </h5>
+			<p class="lead">Si on vas sur la page d'acceuil puis dans la console de developpement de chrome, on peut voir le a href du lien</p>
+			<img src="img/1.png" class="mt-4 img_sh om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 2 : </h5>
+			<p class="lead">on remarque 2 variables redirect et site</p>
+			<img src="img/2.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 3 : </h5>
+			<p class="lead">On change site=facebook par site=http://google.com par exemple</p>
+			<img src="img/3.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 4 : </h5>
+			<p class="lead">On click sur le lien et on vas etre rediriger vers google</p>
+			<img src="img/4.png" class="mt-4 img_sh om">
+		</div>
+
+		<h3 class="mt-5">Protection de la faille : </h3>
+
+		<p class="mt-5 lead">Verifier que le lien qui est donnee est conforme au site car a la place de google on peut mettre un site de fishing</p>
+	</div>
+</body>
+</html>
