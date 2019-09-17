@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input value change</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Faille numero 2 : Input_value_change</a>
+	</nav>
+	<div align="center">
+		<h1 class="mt-4">Changement de la valeur d'un input de type select</h1>
+
+		<h3 class="mt-5">Exploitation de la faille : </h3>
+
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 1 : </h5>
+			<p class="lead">Si on vas sur la page survey du site, on peut voir un tableau avec des valeurs</p>
+			<img src="img/1.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 2 : </h5>
+			<p class="lead">En allant dans la console de developpement, on peut voir qu'il y a des input de type select</p>
+			<img src="img/2.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 3 : </h5>
+			<p class="lead">On change la valeur de l'option du select par une nouvelle</p>
+			<img src="img/3.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 4 : </h5>
+			<p class="lead">On choisis la nouvelle valeur, cela envoye le formulaire</p>
+			<img src="img/4.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 5 : </h5>
+			<p class="lead">La nouvelle valeur a etait ajoute dans la base de donnee</p>
+			<img src="img/5.png" class="mt-4 om">
+		</div>
+
+		<h3 class="mt-5">Protection de la faille : </h3>
+
+		<p class="mt-5 lead">Mettre une protection du coter serveur qui dans se cas check si la valeur est entre 1 et 10</p>
+	</div>
+</body>
+</html>

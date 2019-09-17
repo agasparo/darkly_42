@@ -1,6 +1,6 @@
 - [] xss script
 - [x] cookies
-- [] valeur dans le tableau
+- [x] valeur dans le tableau
 - [] src dans image
 - [] redirection des links de partage
 - [] email dans forgot password
