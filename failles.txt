@@ -3,7 +3,7 @@
 - [x] valeur dans le tableau
 - [] src dans image
 - [x] redirection des links de partage
-- [] email dans forgot password
+- [x] email dans forgot password
 - [] upload image
 - [] show membre
 - [] show img

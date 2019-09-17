@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mail change</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Faille numero 3 : Mail change</a>
+	</nav>
+	<div align="center">
+		<h1 class="mt-4">Changement de la valeur du mail</h1>
+
+		<h3 class="mt-5">Exploitation de la faille : </h3>
+
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 1 : </h5>
+			<p class="lead">Si on vas sur la page d'acceuil puis sur la page de login</p>
+			<img src="img/1.png" class="mt-4 img_sh om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 2 : </h5>
+			<p class="lead">On click sur forgot password puis on inspect l'element on peut voir un input hidden ou il y a le mail de l'admin</p>
+			<img src="img/2.png" class="mt-4 img_sh om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 3 : </h5>
+			<p class="lead">On change le mail par un autre</p>
+			<img src="img/3.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 4 : </h5>
+			<p class="lead">On click sur submit et (normalement ca nous enverais un mail avec des infos sur le user)</p>
+			<img src="img/4.png" class="mt-4 img_sh om">
+		</div>
+
+		<h3 class="mt-5">Protection de la faille : </h3>
+
+		<p class="mt-5 lead">Faire un vrai system de changement de mot de passe</p>
+	</div>
+</body>
+</html>
