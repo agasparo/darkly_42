@@ -1,0 +1,12 @@
+- [] xss script
+- [] cookies
+- [] valeur dans le tableau
+- [] src dans image
+- [] redirection des links de partage
+- [] email dans forgot password
+- [] upload image
+- [] show membre
+- [] show img
+- [] connection
+
+- [] renomer les dossiers avec le nom de la faille
