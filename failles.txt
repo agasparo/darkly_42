@@ -1,3 +1,2 @@
-- [] connection (brut force)
 - [] trouver lz derniere faille
 - [] test upload file sans le curl
