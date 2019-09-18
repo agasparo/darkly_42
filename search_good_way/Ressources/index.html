@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>admin_sec</title>
+	<title>trouver le bon chemin</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		<a class="navbar-brand" href="#">Faille numero 10 : admin_sec</a>
+		<a class="navbar-brand" href="#">Faille numero 10 : trouver le bon chemin</a>
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
         		<a class="nav-link" href="../../manuel.html">retour</a>
@@ -15,7 +15,7 @@
 		</ul>
 	</nav>
 	<div align="center">
-		<h1 class="mt-4">admin section</h1>
+		<h1 class="mt-4">Trouver le fiochier contenant les bonnes informations</h1>
 
 		<h3 class="mt-5">Exploitation de la faille : </h3>
 
@@ -27,32 +27,28 @@
 		</div>
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 2 : </h5>
-			<p class="lead">On vas dans le dossier whatever</p>
+			<p class="lead">On vas dans le dossier .hidden</p>
 			<img src="img/2.png" class="mt-4 img_sh om">
 		</div>
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 3 : </h5>
-			<p class="lead">On click sur le fichier htpasswd ou est stocker le mdp pour acceder a l'espace admin</p>
+			<p class="lead">On lance un serveur php pour executer le code</p>
 			<img src="img/3.png" class="mt-4 om">
 		</div>
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 4 : </h5>
-			<p class="lead">On decrypt le md5 du mot de passe, on obtient : dragon</p>
-			<img src="img/4.png" class="mt-4 om">
+			<p class="lead">Creation du code qui va recuperer le bon fichier</p>
+			<img src="img/4.png" class="mt-4 img_sh om">
+			<img src="img/6.png" class="mt-4 img_sh om">
 		</div>
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 5 : </h5>
-			<p class="lead">On vas sur la route admin et on rentre en username root et en mot de passe dragon</p>
+			<p class="lead">Execution du code et recuperation du flag</p>
 			<img src="img/5.png" class="mt-4 img_sh om">
-		</div>
-		<div class="mt-5">
-			<h5 class="mt-4">Etape 6 : </h5>
-			<p class="lead">On arrive sur l'espace admin</p>
-			<img src="img/6.png" class="mt-4 img_sh om">
 		</div>
 		<h3 class="mt-5">Protection de la faille : </h3>
 
-		<p class="mt-5 lead">Faire un system avec des routes et des sessions et enregister le mdp dans la bdd</p>
+		<p class="mt-5 lead">cacher les informations importantes avec un .htaccess</p>
 	</div>
 </body>
 </html>
