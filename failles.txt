@@ -2,9 +2,9 @@
 - [x] valeur dans le tableau
 - [x] redirection des links de partage
 - [x] email dans forgot password
-- [] xss script
+- [x] xss script
+- [] show img
 - [] src dans image
 - [] upload image
 - [] show membre
-- [] show img
 - [] connection
