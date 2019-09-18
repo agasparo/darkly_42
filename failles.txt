@@ -3,7 +3,7 @@
 - [x] redirection des links de partage
 - [x] email dans forgot password
 - [x] xss script
-- [] show img
+- [x] show img
 - [] src dans image
 - [] upload image
 - [] show membre
