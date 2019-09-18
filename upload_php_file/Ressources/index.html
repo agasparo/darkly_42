@@ -26,9 +26,13 @@
 		</div>
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 2 : </h5>
-			<p class="lead">On execute la commande curl suivante :<br>curl -s -X POST -F "uploaded=@chemin vers votre fichier php;type=image/jpeg" -F "Upload=Upload" "http://192.168.1.38/index.php?page=upload" | grep -e 'flag'<br>le 
-			image/jpeg est tres important car il permet de faire croire au serveur que le mime du fichier et celui d'une image</p>
-			<img src="img/2.png" class="mt-4 img_sh om">
+			<p class="lead">On creer un script qui vas envoyer une requette post et files pour envoyer le fichier avec un type=image/jpeg pourtromper le system</p>
+			<img src="img/2.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 3 : </h5>
+			<p class="lead">On execute le code et on affiche le retour</p>
+			<img src="img/3.png" class="mt-4 img_sh om">
 		</div>
 		<h3 class="mt-5">Protection de la faille : </h3>
 
