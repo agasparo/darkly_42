@@ -1,0 +1,14 @@
+body {
+
+	background-color: #EFEFEF;
+}
+
+.img_sh {
+
+	position: relative;
+	width: 80%;
+}
+
+.om {
+	box-shadow: 1px 1px 12px #555;
+}
