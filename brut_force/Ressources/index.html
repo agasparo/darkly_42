@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>brut_force</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Faille numero 13 : brut_force</a>
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+        		<a class="nav-link" href="../../manuel.html">retour</a>
+      		</li>
+		</ul>
+	</nav>
+	<div align="center">
+		<h1 class="mt-4">Brut force un mot de passe</h1>
+
+		<h3 class="mt-5">Exploitation de la faille : </h3>
+
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 1 : </h5>
+			<p class="lead">Si on vas sur la page login du site</p>
+			<img src="img/1.png" class="mt-4 img_sh om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 2 : </h5>
+			<p class="lead">Si on teste un login et un mdp au hasard</p>
+			<img src="img/2.png" class="mt-4 img_sh om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 3 : </h5>
+			<p class="lead">On lance un serveur pour le script php</p>
+			<img src="img/3.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 4 : </h5>
+			<p class="lead">On fais un script de brut force (dans le dichier mdp il y a 1000 mdps)</p>
+			<img src="img/6.png" class="mt-4 om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 5 : </h5>
+			<p class="lead">On execute le script et hop il trouve le mdp</p>
+			<img src="img/4.png" class="mt-4 img_sh om">
+		</div>
+		<div class="mt-5">
+			<h5 class="mt-4">Etape 6 : </h5>
+			<p class="lead">Cette fois on se log avec en username admin et en password shadow</p>
+			<img src="img/5.png" class="mt-4 img_sh om">
+		</div>
+
+		<h3 class="mt-5">Protection de la faille : </h3>
+
+		<p class="mt-5 lead">Mettre un system de max connection</p>
+	</div>
+</body>
+</html>
