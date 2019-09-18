@@ -5,6 +5,7 @@
 - [x] xss script
 - [x] show img
 - [x] show membre
+- [] /etc/passwd
 - [] src dans image
 - [] upload image
 - [] connection
