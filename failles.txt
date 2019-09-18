@@ -4,7 +4,7 @@
 - [x] email dans forgot password
 - [x] xss script
 - [x] show img
+- [x] show membre
 - [] src dans image
 - [] upload image
-- [] show membre
 - [] connection
