@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>injection_sql_user</title>
+	<title>include_page</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		<a class="navbar-brand" href="#">Faille numero 6 : injection_sql_user</a>
+		<a class="navbar-brand" href="#">Faille numero 8 : include_page</a>
 		<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
         		<a class="nav-link" href="../../manuel.html">retour</a>
@@ -15,45 +15,49 @@
 		</ul>
 	</nav>
 	<div align="center">
-		<h1 class="mt-4">Injection de sql dans le champs de recherche des utilisateurs</h1>
+		<h1 class="mt-4">Recuperation du fichier /etc/passwd du serveur</h1>
 
 		<h3 class="mt-5">Exploitation de la faille : </h3>
 
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 1 : </h5>
-			<p class="lead">Si on vas sur la page d'acceuil puis sur la page de recherche des utilisateurs</p>
-			<img src="img/1.png" class="mt-4 img_sh om">
+			<p class="lead">On peut voir dans l'url que l'on peut inclure une page avec ici ?page=member</p>
+			<img src="img/1.png" class="mt-4 om">
 		</div>
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 2 : </h5>
-			<p class="lead">si on met la commande : <br>1 or 1=1 UNION select table_name, column_name FROM information_schema.columns<br><br>dans le chamsp de recherche et que l'on valide le formulaire on obtient les informations sur les differentes tables de la base de donnee, ici on prend juste les informations de la table users</p>
+			<p class="lead">On teste avec un site au hasard pour voir si un peut injecter du code venant dun autre site</p>
 			<img src="img/2.png" class="mt-4 om"><br>
 			<img src="img/3.png" class="mt-4 om">
 		</div>
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 3 : </h5>
-			<p class="lead">Si on met juste 1 or 1=1 dans le champs on peut voir que le site affiche que deux champs <br>donc notre requette demandera a chaque fois 2 champs comme par exemple [town, planet], [last_name, first_name], [..., ...]</p>
-			<img src="img/5.png" class="mt-4 om"><br>
+			<p class="lead">Comme cela ne fonctionne pas on test de recuperer le fichier etc/passwd</p>
+			<img src="img/4.png" class="mt-4 om"><br>
+			<img src="img/5.png" class="mt-4 om">
 		</div>
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 4 : </h5>
-			<p class="lead">On test toutes le possibilites avec 2 champs puis on tombe sur le couple [Commentaire, countersign]<br>ce qui nous donne la requette : 1 or 1=1 UNION SELECT Commentaire, countersign FROM users</p>
-			<img src="img/4.png" class="mt-4 om">
+			<p class="lead">Comme le message d'erreur change on continu a remonter dans les dossiers</p>
+			<img src="img/6.png" class="mt-4 om"><br>
+			<img src="img/7.png" class="mt-4 om">
 		</div>
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 5 : </h5>
-			<p class="lead">On decrypt le md5 de 5ff9d0165b4f92b14994e5c685cdce28, ce qui nous donne FortyTwo</p>
-			<img src="img/6.png" class="mt-4 om">
+			<p class="lead">a chaque fois on ajoute ../ devant</p>
+			<img src="img/9.png" class="mt-4 om"><br>
+			<img src="img/8.png" class="mt-4 om">
 		</div>
 		<div class="mt-5">
 			<h5 class="mt-4">Etape 6 : </h5>
-			<p class="lead">On met que des minuscule a FortyTwo et on fais sont sha256</p>
-			<img src="img/7.png" class="mt-4 om">
+			<p class="lead">Et finalement on fini par le trouver</p>
+			<img src="img/10.png" class="mt-4 om"><br>
+			<img src="img/11.png" class="mt-4 om">
 		</div>
 
 		<h3 class="mt-5">Protection de la faille : </h3>
 
-		<p class="mt-5 lead">Utiliser pdo au lieu de mysqli</p>
+		<p class="mt-5 lead">Faire un system de route pour ne pas pourvoir acceder a des fichiers non voulus</p>
 	</div>
 </body>
 </html>
