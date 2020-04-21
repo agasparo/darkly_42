@@ -29,6 +29,6 @@ $context = stream_context_create(array(
     )
 ));
 
-echo file_get_contents('http://192.168.1.38/?page=upload', false, $context);
+echo file_get_contents('http://192.168.1.16/?page=upload', false, $context);
 
 ?>

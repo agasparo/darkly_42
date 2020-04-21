@@ -5,7 +5,7 @@ $search->run();
 
 Class search {
 
-	const ROOT = "http://192.168.1.38/.hidden/";
+	const ROOT = "http://192.168.1.16/.hidden/";
 	const NB_PAR_PAGE = 26;
 
 	/**
